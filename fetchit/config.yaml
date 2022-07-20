@@ -15,6 +15,6 @@ targetConfigs:
   url: https://github.com/schlauerlauer/gitops
   kube:
   - name: kube-ex
-    targetPath: examples/kube
+    targetPath: fetchit/kube
     schedule: "*/1 * * * *"
   branch: main
