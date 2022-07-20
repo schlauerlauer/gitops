@@ -4,10 +4,17 @@ configReload:
   configURL: https://gitlab.com/schlauerlauer/gitops/-/raw/main/fetchit/config.yaml
 targetConfigs:
 - name: gitops
-  url: https://gitlab.com/schlauerlauer/gitops
+  url: https://github.com/schlauerlauer/gitops
   raw:
   - name: raw-ex
     targetPath: fetchit/raw
     schedule: "*/1 * * * *"
     pullImage: false
+  branch: main
+- name: gitops
+  url: https://github.com/schlauerlauer/gitops
+  kube:
+  - name: kube-ex
+    targetPath: examples/kube
+    schedule: "*/1 * * * *"
   branch: main
