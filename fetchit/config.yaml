@@ -1,3 +1,7 @@
+configReload:
+  name: config-reload
+  schedule: "*/5 * * * *"
+  configURL: https://gitlab.com/schlauerlauer/gitops/-/raw/main/fetchit/config.yaml
 targetConfigs:
 - name: fetchit
   url: https://github.com/containers/fetchit
