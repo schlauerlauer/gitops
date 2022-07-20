@@ -5,7 +5,7 @@ metadata:
   name: router-pod
 spec:
   containers:
-    - name: router
+    - name: nginx
       image: docker.io/library/nginx:latest
       ports:
       - containerPort: 80
