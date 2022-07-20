@@ -3,11 +3,11 @@ configReload:
   schedule: "*/5 * * * *"
   configURL: https://raw.githubusercontent.com/schlauerlauer/gitops/main/fetchit/config.yaml
 targetConfigs:
-- name: fetchit
-  url: https://github.com/containers/fetchit
+- name: gitops
+  url: https://github.com/schlauerlauer/gitops
   raw:
   - name: raw-ex
-    targetPath: examples/raw
+    targetPath: fetchit/raw
     schedule: "*/1 * * * *"
     pullImage: false
   branch: main
