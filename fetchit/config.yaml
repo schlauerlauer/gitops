@@ -4,7 +4,7 @@ configReload:
   configURL: https://gitlab.com/schlauerlauer/gitops/-/raw/main/fetchit/config.yaml
 targetConfigs:
 - name: gitops
-  url: https://github.com/schlauerlauer/gitops
+  url: https://gitlab.com/schlauerlauer/gitops
   raw:
   - name: raw-ex
     targetPath: fetchit/raw
