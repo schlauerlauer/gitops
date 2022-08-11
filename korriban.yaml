@@ -1,6 +1,6 @@
 configReload:
   name: config-reload
-  schedule: "*/5 * * * *"
+  schedule: "*/2 * * * *"
   configURL: https://raw.githubusercontent.com/schlauerlauer/gitops/main/korriban.yaml
 targetConfigs:
 - name: gitops
