@@ -10,11 +10,3 @@ spec:
       ports:
       - containerPort: 80
         hostPort: 8080
-targetConfigs:
-- name: gitops
-  url: https://github.com/schlauerlauer/gitops
-  kube:
-  - name: kube-ex
-    targetPath: fetchit/kube
-    schedule: "*/1 * * * *"
-  branch: main
