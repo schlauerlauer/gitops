@@ -2,3 +2,11 @@ configReload:
   name: config-reload
   schedule: "*/5 * * * *"
   configURL: https://raw.githubusercontent.com/schlauerlauer/gitops/main/korriban.yaml
+targetConfigs:
+- name: gitops
+  url: https://github.com/schlauerlauer/gitops
+  kube:
+  - name: kube-ex
+    targetPath: fetchit/kube
+    schedule: "*/1 * * * *"
+  branch: main
