@@ -1,0 +1,4 @@
+configReload:
+  name: config-reload
+  schedule: "*/5 * * * *"
+  configURL: https://gitlab.com/schlauerlauer/gitops/-/raw/main/geonosis/config.yaml
